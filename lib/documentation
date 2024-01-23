@@ -1,10 +1,9 @@
 
-
 ***************** RiverPod *************************
 
-1. Firstly we need to install package that is flutter_riverpod. We ave 3 packages for riverpod that are 
+1. Firstly we need to install package that is flutter_riverpod. We have 3 packages for riverpod that are 
 riverpod (this is for dart), flutter_riverpod(for flutter), hooks_riverpod(for flutter hook).
-2. We define riverpod globally then give the state in runApp() using Riverpod scope
+2. We define riverpod globally then give the state in runApp() using ProviderScope.
 3. In riverpod we are not use stateless and statefull widget, in the place of stateless we use consumerWidget 
 
 
@@ -12,15 +11,16 @@ riverpod (this is for dart), flutter_riverpod(for flutter), hooks_riverpod(for f
 
 1. *Provider* (isy hm state dyty hyn and then down the tree khin py b access kr skty hyn, just read only provider, data change ni hota, widget re-build nhi hota)
 
-2. *State Provider* (isy hm simple state dyty hyn, complex nhi. and then down the tree khin py b access kr skty hyn, just read amd write provider, data change  hota h, widget re-build hota h)
+2. *State Provider* (isy hm simple state dyty hyn, complex nhi. and then down the tree khin py b access kr skty hyn, read and write provider, data change hota h, widget re-build hota h)
 3. *Future Provider* (equivalent to provider but for asynchronous code, performing and caching asyncronous operation such as network request, nicely handling errors , loading state of asyncrounous data )
 4. *Stream Provider* (similar to future provider but for streams instead of future, rebuilding another provider every few seconds, listing to firebase or web sockets)
-5. *Change Notifier Provider* (used to listen and expose a state notifier, work on immutable state which can change over time)
-6. *State Notifier Provider* (riverpod prevent to use it in riverpod statemanagement, supporting mutable states)
+5. *State Notifier Provider* (used to listen and expose a state notifier, work on immutable state which can change over time)
+6. *Change Notifier Provider* (riverpod prevent to use it in riverpod statemanagement, supporting mutable states)
+
 
 ******** Provider vs Riverpod ***********
-.. pros of riverpod over provider
-.. Compile safe (N providerNotFound exception anymore)
+          Pros of riverpod over provider
+.. Compile safe (NO providerNotFound exception anymore)
 .. Does not depend on widget tree 
 .. support multiple providers at the same time 
 
