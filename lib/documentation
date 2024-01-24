@@ -32,7 +32,6 @@ There are two modifiers in riverpod
 1) .autoDispose modifier
 2) .Family modifier
 
-
 1) .autoDispose modifier
 Use to destroy the state of provider when it is no longer used. Remove caching
 Use to reset the state when the user leaves the screen and re-enter it.
