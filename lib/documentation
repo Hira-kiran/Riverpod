@@ -1,5 +1,21 @@
 
 ***************** RiverPod *************************
+AUTHOR:  Remi Rousselet  (RUMS) same author for provider
+
+INTRODUCTION:
+Riverpod is a state management library.
+Not just a state management it also work as a cache and also manage dependency injection in a awesome way.
+
+Their was some problems with provider that fix riverpod.
+
+*****Benefits and which problem it fix******
+
+Code ko compile time pr check krta ha.
+Dependeccy injection khud manage krta ha
+Easy to manage
+Error handling khud e kr dyta ha, hmy just frontend py use krna hota h
+
+
 
 1. Firstly we need to install package that is flutter_riverpod. We have 3 packages for riverpod that are 
 riverpod (this is for dart), flutter_riverpod(for flutter), hooks_riverpod(for flutter hook).
@@ -11,10 +27,28 @@ riverpod (this is for dart), flutter_riverpod(for flutter), hooks_riverpod(for f
 
 1. *Provider* (isy hm state dyty hyn and then down the tree khin py b access kr skty hyn, just read only provider, data change ni hota, widget re-build nhi hota)
 
-2. *State Provider* (isy hm simple state dyty hyn, complex nhi. and then down the tree khin py b access kr skty hyn, read and write provider, data change hota h, widget re-build hota h)
+**** important(sirf constant values ko read krny k lye use hota ha )
+
+
+2. *State Provider* (isy hm shttps://github.com/Hira-kiran/Riverpod.gitimple state dyty hyn, complex nhi. and then down the tree khin py b access kr skty hyn, read and write provider, data change hota h, widget re-build hota h)
+
+**** important(use to manage small state like toggle button, counter)
+
+
 3. *Future Provider* (equivalent to provider but for asynchronous code, performing and caching asyncronous operation such as network request, nicely handling errors , loading state of asyncrounous data )
+
+**** important(for future providers , like For APIs, future builder, dont need to use snapshots bcz it handle the errors automatically we just need to call its methods)
+
+
 4. *Stream Provider* (similar to future provider but for streams instead of future, rebuilding another provider every few seconds, listing to firebase or web sockets)
+
+
+**** important(use to manage streems, like messeging etc)
+
 5. *State Notifier Provider* (used to listen and expose a state notifier, work on immutable state which can change over time)
+
+**** important(use for complex state management)
+
 6. *Change Notifier Provider* (riverpod prevent to use it in riverpod statemanagement, supporting mutable states)
 
 
